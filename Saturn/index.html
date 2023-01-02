@@ -1,0 +1,246 @@
+<html><head>
+	<meta charset="utf-8">
+	<title>animasi saturnus</title>
+<style type="text/css">
+
+body{
+	background: #020202;
+}
+#saturn, #isiSaturn{
+	top: 160px;
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	background:  linear-gradient(20deg, #e38175 20%, #faa892, #faa892);
+	border-radius: 50%;
+	z-index: 1;
+}
+#isiSaturn{
+	background: linear-gradient(20deg, transparent 45%, #faa892, #e38175, #e38175);
+	z-index: 3;
+}
+#asteroid{
+	top: 100px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	animation: animasi 7s linear infinite;
+	width: 300px;
+	border: 3px solid #ffd0e2;
+	border-right: 3px solid transparent;
+	height: 300px;
+	z-index: 2;
+}
+#asteroid, #asteroid div {
+	position: absolute;
+	background-color: transparent;
+	transform-style: preserve-3d;
+	border-radius:50%;
+}
+
+#ast1{
+	border: 3px solid #ffd0e2;
+	border-left: 3px solid transparent;
+	opacity: 0.6;
+	left: -5px;
+	top: -5px;
+	width: 310px;
+	height: 310px;
+	animation: anakAnimasi 24s linear infinite;
+}
+#ast2{
+	border: 3px solid #ffd0e2;
+	border-left: 3px solid transparent;
+	opacity: 0.8;
+	left: -10px;
+	top: -10px;
+	width: 320px;
+	height: 320px;
+	animation: anakAnimasi 11s linear infinite;
+}
+#ast3{
+	border: 3px solid #ffd0e2;
+	border-left: 3px solid transparent;
+	opacity: 0.7;
+	left: -15px;
+	top: -15px;
+	width: 330px;
+	height: 330px;
+	animation: anakAnimasi 17s linear infinite;
+}
+#ast4{
+	border: 3px solid #ffd0e2;
+	border-top: 3px solid transparent;
+	opacity: 0.6;
+	left: -20px;
+	top: -20px;
+	width: 340px;
+	height: 340px;
+	animation: anakAnimasi 10s linear infinite;
+}
+#ast5{
+	border: 3px solid #ffd0e2;
+	border-top: 3px solid transparent;
+	opacity: 0.7;
+	left: -25px;
+	top: -25px;
+	width: 350px;
+	height: 350px;
+	animation: anakAnimasi 18s linear infinite;
+}
+#ast6{
+	border: 3px solid #ffd0e2;
+	border-bottom: 3px solid transparent;
+	opacity: 0.8;
+	left: -30px;
+	top: -30px;
+	width: 360px;
+	height: 360px;
+	animation: anakAnimasi 16s linear infinite;
+}
+#ast7{
+	border: 3px solid #ffd0e2;
+	border-left: 3px solid transparent;
+	opacity: 0.6;
+	left: -35px;
+	top: -35px;
+	width: 370px;
+	height: 370px;
+	animation: anakAnimasi 14s linear infinite;
+}
+#ast8{
+	border: 3px solid #ffd0e2;
+	border-left: 3px solid transparent;
+	opacity: 0.8;
+	left: -40px;
+	top: -40px;
+	width: 380px;
+	height: 380px;
+	animation: anakAnimasi 22s linear infinite;
+}
+#ast9{
+	border: 3px solid #ffd0e2;
+	border-top: 3px solid transparent;
+	opacity: 0.5;
+	left: -63px;
+	top: -63px;
+	width: 426px;
+	height: 426px;
+	animation: anakAnimasi 22s linear infinite;
+}
+#ast10{
+	border: 3px solid #ffd0e2;
+	border-left: 3px solid transparent;
+	opacity: 0.5;
+	left: -70px;
+	top: -70px;
+	width: 440px;
+	height: 440px;
+	animation: anakAnimasi 23s linear infinite;
+}
+#ast11{
+	border: 3px solid #ffd0e2;
+	border-top: 3px solid transparent;
+	opacity: 0.7;
+	left: -77px;
+	top: -77px;
+	width: 454px;
+	height: 454px;
+	animation: anakAnimasi 21s linear infinite;
+}
+#ast12{
+	border: 3px solid #ffd0e2;
+	border-bottom: 3px solid transparent;
+	opacity: 0.7;
+	left: -84px;
+	top: -84px;
+	width: 468px;
+	height: 468px;
+	animation: anakAnimasi 12s linear infinite;
+}
+#ast13{
+	border: 3px solid #ffd0e2;
+	border-bottom: 3px solid transparent;
+	opacity: 0.7;
+	left: -91px;
+	top: -91px;
+	width: 482px;
+	height: 482px;
+	animation: anakAnimasi 17s linear infinite;
+}
+#ast14{
+	border: 3px solid #ffd0e2;
+	border-left: 3px solid transparent;
+	opacity: 0.7;
+	left: -98px;
+	top: -98px;
+	width: 496px;
+	height: 496px;
+	animation: anakAnimasi 17s linear infinite;
+}
+#ast15{
+	border: 3px solid #ffd0e2;
+	border-left: 3px solid transparent;
+	opacity: 0.6;
+	left: -105px;
+	top: -105px;
+	width: 510px;
+	height: 510px;
+	animation: anakAnimasi 12s linear infinite;
+}
+#ast16{
+	border: 3px solid #ffd0e2;
+	border-top: 3px solid transparent;
+	opacity: 0.5;
+	left: -112px;
+	top: -112px;
+	width: 524px;
+	height: 524px;
+	animation: anakAnimasi 23s linear infinite;
+}
+
+
+@KeyFrames animasi{
+	0%{
+	    transform: rotateX(-75deg) rotateY(-20deg) rotateZ(0deg);
+	}
+	100%{
+	    transform: rotateX(-75deg) rotateY(-20deg) rotateZ(360deg);
+	}
+}
+@KeyFrames anakAnimasi{
+	0%{
+	    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	}
+	100%{
+	    transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+	}
+}
+
+</style>
+</head>
+
+<body>
+	<div id="saturn"></div>
+	<div id="isiSaturn"></div>
+	<div id="asteroid">
+		<div id="ast1"></div>
+		<div id="ast2"></div>
+		<div id="ast3"></div>
+		<div id="ast4"></div>
+		<div id="ast5"></div>
+		<div id="ast6"></div>
+		<div id="ast7"></div>
+		<div id="ast8"></div>
+		<div id="ast9"></div>
+		<div id="ast10"></div>
+		<div id="ast11"></div>
+		<div id="ast12"></div>
+		<div id="ast13"></div>
+		<div id="ast14"></div>
+		<div id="ast15"></div>
+		<div id="ast16"></div>
+	</div>
+</body></html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Animation Dark Planet</title>
+<style type="text/css">
+
+body{
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	background: #040d21;
+	width: 100vw;
+}
+#planet,#isiPlanet{
+	top: 200px;
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: #040d21;
+	border-radius: 50%;
+	z-index: 2;
+}
+#isiPlanet{
+	background: linear-gradient(20deg, transparent 55%, #040d21 45%);
+	z-index: 4;
+}
+#asteroid{
+	top: 140px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 300px;
+	height: 300px;
+	border: 3px solid white;
+	border-right: 3px solid transparent;
+	z-index: 3;
+	animation: animasi 12s linear infinite;
+}
+#asteroid, #asteroid div{
+	position: absolute;
+	transform-style: preserve-3d;
+	background: transparent;
+	border-radius: 50%;
+}
+@KeyFrames animasi{
+	0%{transform: rotateX(-60deg) rotateY(-20deg) rotateZ(0deg);}
+	100%{transform: rotateX(-60deg) rotateY(-20deg) rotateZ(360deg);}
+}
+@KeyFrames ast{
+	0%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+	100%{transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);}
+}
+#light {
+	transform: perspective(8px) rotateX(1deg) rotateZ(-30deg);
+	background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.6), rgba(255,255,255,0.4), rgba(255,255,255,0.2), transparent);
+	position: absolute;
+	width: 50vw;
+	height: 100vh;
+	left: -150px;
+	top: -300px;
+	z-index: 1;
+}
+.batuLuarAngkasa{
+	color: white;
+	position: absolute;
+	animation: fall linear forwards;
+	right: 0px;
+}
+@KeyFrames fall{
+	to{transform: translateX(-120vw);}
+}
+
+</style>
+</head>
+<body>
+	<div id="planet"></div>
+	<div id="isiPlanet"></div>
+	<div id="asteroid">
+		<div id="ast1"></div>
+		<div id="ast2"></div>
+		<div id="ast3"></div>
+		<div id="ast4"></div>
+		<div id="ast5"></div>
+		<div id="ast6"></div>
+		<div id="ast7"></div>
+		<div id="ast8"></div>
+		<div id="ast9"></div>
+		<div id="ast10"></div>
+		<div id="ast11"></div>
+		<div id="ast12"></div>
+		<div id="ast13"></div>
+		<div id="ast14"></div>
+		<div id="ast15"></div>
+		<div id="ast16"></div>
+		<div id="ast17"></div>
+		<div id="ast18"></div>
+	</div>
+	<div id="light"></div>
+</body>
+<script type="text/javascript">
+	
+var opacity = [0.5,0.5,0.6,0.7,0.8,0.6,0.5,0.7,0.6,0.7,0.5,0.6,0.6,0.7,0.6,0.7,0.6,0.6];
+var duration = [19,18,23,16,22,24,14,24,17,22,13,22,8,8,11,21,10,23];
+var trans = [[true,false,false,false], [false,true,true,true], [true,false,false,false], [false,true,false,true], [false,false,true,false], [true,false,false,false], [false,true,false,false], [true,false,false,false], [false,true,false,true], [false,false,true,false], [true,true,false,true], [false,true,true,true], [true,false,false,false], [true,false,false,false], [false,false,false,true], [false,false,true,false], [false,true,false,true], [false,false,false,true]];
+
+(function(){
+	for (var i = 1; i <= 18; i++) {
+		let hasil1 = 20*i;
+		let hasil2 = 300+(40*i);
+		if (i>8) {
+			hasil1 = 20*i;
+			hasil2 = 300+(40*i);
+		}
+		document.getElementById('ast'+i).style.opacity = opacity[i-1];
+		document.getElementById('ast'+i).style.left = "-"+hasil1+"px";
+		document.getElementById('ast'+i).style.top = "-"+hasil1+"px";
+		document.getElementById('ast'+i).style.width = hasil2+"px";
+		document.getElementById('ast'+i).style.height = hasil2+"px";
+		document.getElementById('ast'+i).style.border = "3px solid white"
+		document.getElementById('ast'+i).style.animation = "ast "+duration[i-1]+"s linear infinite";
+		let Left = trans[i-1][0] == true ? (document.getElementById('ast'+i).style.borderLeft = "3px solid transparent") : "none";
+		let Right = trans[i-1][1] == true ? (document.getElementById('ast'+i).style.borderRight = "3px solid transparent") : "none";
+		let Top = trans[i-1][2] == true ? (document.getElementById('ast'+i).style.borderTop = "3px solid transparent") : "none";
+		let Bottom = trans[i-1][3] == true ? (document.getElementById('ast'+i).style.borderBottom = "3px solid transparent") : "none";
+	}
+})();
+function buatAst() {
+	const batuLuarAngkasa = document.createElement("b");
+	batuLuarAngkasa.classList.add("batuLuarAngkasa");
+	let node  = document.createTextNode(".");
+	batuLuarAngkasa.appendChild(node);
+	batuLuarAngkasa.style.top = Math.random() * 600 + "px";
+	batuLuarAngkasa.style.animationDuration = Math.random() *4 + 8 +"s";
+	batuLuarAngkasa.style.opacity = Math.random()+0.2;
+	batuLuarAngkasa.style.fontSize = Math.random() *30 +25 +"px";
+	batuLuarAngkasa.style.zIndex = 5;
+	if (batuLuarAngkasa.style.opacity<0.8) {
+		batuLuarAngkasa.style.zIndex = 1;
+	}
+	document.querySelector("body").appendChild(batuLuarAngkasa);
+	setTimeout(() => {
+		batuLuarAngkasa.remove();
+	}, 20000);
+}
+var astero = setInterval(buatAst, 1000);
+
+</script>
+</html>
