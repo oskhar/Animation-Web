@@ -77,7 +77,7 @@ Agar terlihat lebih nyata gambar buminya ditambahkan layer sebagai lapisan atmos
 }
 ```
 ##### Gambar 5. Hasil atau Output dari program diatas
-![Ini Gambar](../docs/img/Earth5.png)
+![Ini Gambar](../docs/img/Earth5.png)<br/>
 
 Setelah menyelesaikan bagian bumi, sekarang mengatur gambar bulan. Pada program ini akan diatur bagaimana bentuk dan posisi bulan.
 ```css
