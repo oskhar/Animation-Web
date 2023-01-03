@@ -86,34 +86,52 @@ Bentuk atau gambar bulan sudah tersusun, hanya perlu menambahkan sentuhan akhir 
 ```css
 @KeyFrames animasiBulan{
 	0%{
-		right: 20%;top: 20%;height: 40px;width: 40px;z-index: 3;
+		right: 20%;
+		top: 20%;
+		height: 40px;
+		width: 40px;
+		z-index: 3;
 	}
 	4%{
-		right: 21%;top: 21%;
+		right: 21%;
+		top: 21%;
 	}
 	30%{
-		height: 80px;width: 80px;
+		height: 80px;
+		width: 80px;
 	}
 	46%{
-		right: 69%;top: 69%;
+		right: 69%;
+		top: 69%;
 	}
 	50%{
-		right: 70%;top: 70%;height: 40px;width: 40px;
+		right: 70%;
+		top: 70%;
+		height: 40px;
+		width: 40px;
 	}
 	54%{
-		right: 69%;top: 69%;
+		right: 69%;
+		top: 69%;
 	}
 	57%{
 		z-index: 1;
 	}
 	80%{
-		height: 30px;width: 30px;
+		height: 30px;
+		width: 30px;
 	}
 	96%{
-		right: 21%;top: 21%;z-index: 1;
+		right: 21%;
+		top: 21%;
+		z-index: 1;
 	}
 	100%{
-		right: 20%;top: 20%;height: 40px;width: 40px;z-index: 3;
+		right: 20%;
+		top: 20%;
+		height: 40px;
+		width: 40px;
+		z-index: 3;
 	}
 }
 ```
