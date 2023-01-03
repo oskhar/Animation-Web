@@ -27,6 +27,10 @@ body{
 	background: #101010;
 }
 ```
+### Before
+![Ini Gambar](../docs/img/Earth1.png)
+### After
+![Ini Gambar](../docs/img/Earth2.png)
 
 Mengatur posisi dan bentuk bumi berdasarkan id
 ```css
@@ -44,6 +48,7 @@ Mengatur posisi dan bentuk bumi berdasarkan id
 	z-index: 2;
 }
 ```
+![Ini Gambar](../docs/img/Earth3.png)
 
 Sekaran kita atur animasi pada gambar bumi. Saya menggunakan foto persegi panjang yang gambarnya akan digerakan dari kanan ke kiri agar terlihat seperti bumi yang sedang berputar.
 ```css
@@ -52,6 +57,7 @@ Sekaran kita atur animasi pada gambar bumi. Saya menggunakan foto persegi panjan
 	100%{background-position: 300%;}
 }
 ```
+![Ini Gambar](../docs/img/Earth4.png)
 
 Agar terlihat lebih nyata gambar buminya ditambahkan layer sebagai lapisan atmosfer
 ```css
@@ -66,6 +72,7 @@ Agar terlihat lebih nyata gambar buminya ditambahkan layer sebagai lapisan atmos
 	border-radius: 50%;
 }
 ```
+![Ini Gambar](../docs/img/Earth5.png)
 
 Setelah menyelesaikan bagian bumi, sekarang mengatur gambar bulan. Pada program ini akan diatur bagaimana bentuk dan posisi bulan.
 ```css
