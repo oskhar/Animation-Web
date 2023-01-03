@@ -1,0 +1,69 @@
+body{
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	background: #040d21;
+	width: 100vw;
+}
+#planet,#isiPlanet{
+	top: 200px;
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: #040d21;
+	border-radius: 50%;
+	z-index: 2;
+}
+#isiPlanet{
+	background: linear-gradient(20deg, transparent 55%, #040d21 45%);
+	z-index: 4;
+}
+#asteroid{
+	top: 140px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 300px;
+	height: 300px;
+	border: 3px solid white;
+	border-right: 3px solid transparent;
+	z-index: 3;
+	animation: animasi 12s linear infinite;
+}
+#asteroid, #asteroid div{
+	position: absolute;
+	transform-style: preserve-3d;
+	background: transparent;
+	border-radius: 50%;
+}
+@KeyFrames animasi{
+	0%{transform: rotateX(-60deg) rotateY(-20deg) rotateZ(0deg);}
+	100%{transform: rotateX(-60deg) rotateY(-20deg) rotateZ(360deg);}
+}
+@KeyFrames ast{
+	0%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+	100%{transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);}
+}
+#light {
+	transform: perspective(8px) rotateX(1deg) rotateZ(-30deg);
+	background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.6), rgba(255,255,255,0.4), rgba(255,255,255,0.2), transparent);
+	position: absolute;
+	width: 50vw;
+	height: 100vh;
+	left: -150px;
+	top: -300px;
+	z-index: 1;
+}
+.batuLuarAngkasa{
+	color: white;
+	position: absolute;
+	animation: fall linear forwards;
+	right: 0px;
+}
+@KeyFrames fall{
+	to{transform: translateX(-120vw);}
+}

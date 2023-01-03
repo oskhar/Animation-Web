@@ -3,82 +3,9 @@
 <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="style.css">
  <title>scroll3D</title>
 </head>
-<style type="text/css">
- body{position: absolute;overflow-x: hidden;overflow-y: scroll;width: 100vw;height: 11300px;}
- content{
-   height: 100vh;
-   width: 100vw;
-   position: fixed;
-   left: 0;
-   right: 0;
-   margin: auto;
-   top: 0;
-   transform-style: preserve-3d;
- }
- content *{
-   position: absolute;
-   height: 100vh;
-   width: 100vw;
-   transform-style: preserve-3d;
-   top: 0;
-   left: 0;
- }
- #depan{
-   background: rgb(255,0,0, 0.5);
-   transform: translateZ(150px);
- }
- #bawah{
-   top: 50%;
-   background: rgb(0,255,0, 0.5);
-   transform: rotateX(90deg);
- }
- #kanan{
-   left: 50%;
-   background: rgb(0,0,255, 0.5);
-   transform: rotateY(90deg);
- }
- #kiri{
-   left: -50%;
-   background: rgb(255,255,0, 0.5);
-   transform: rotateY(90deg);
- }
- #atas{
-   top: -50%;
-   background: rgb(0,255,255, 0.5);
-   transform: rotateX(90deg);
- }
- #belakang{
-   background: rgb(255,0,255, 0.5);
-   transform: translateZ(-150px);
- }
- @KeyFrames muter1{
-   to{
-     height: 300px;
-     width: 300px;
-     top: 25vh;
-   }
- }
- @KeyFrames muter2{
-   /*to{
-     transform: rotatex(-90deg) rotateY(90deg);
-     transform: rotatex(90deg) rotateY(-90deg);
-     transform: rotatex(-90deg) rotateY(-90deg);
-     transform: rotatex(90deg) rotateY(90deg);
-     transform: rotatex(90deg) rotateY(-90deg);
-     transform: rotatex(-90deg) rotateY(90deg);
-   }*/
-   50%{
-     border-radius: 70%;
-   }
-   100%{
-     height: 300px;
-     width: 300px;
-     border-radius: 0;
-   }
- }
-</style>
 <body>
  <content>
    <div id="depan"></div>
@@ -89,29 +16,5 @@
    <div id="atas"></div>
  </content>
 </body>
-<script type="text/javascript">
- var penanda = 10,
-   pin1 = true;
- function scrollFun(PSS) {
-   if ((PSS-500) > penanda) {
-     document.querySelector('content').style.transform = 'rotatex('+(0-(((PSS-500)-((PSS-500)%penanda))/penanda))+'deg) rotateY('+(0+(((PSS-500)-((PSS-500)%penanda))/penanda))+'deg)';
-   }
- }
- window.scrollTo(0,0);
- window.onscroll = function() {myFunction()};
- function myFunction() { 
-     if (window.pageYOffset > 200 && pin1) {
-       document.querySelector('content').style.animation = 'muter1 1200ms forwards 500ms';
-       document.getElementById('depan').style.animation = 'muter2 1200ms forwards 500ms';
-       document.getElementById('bawah').style.animation = 'muter2 1200ms forwards 500ms';
-       document.getElementById('kanan').style.animation = 'muter2 1200ms forwards 500ms';
-       document.getElementById('kiri').style.animation = 'muter2 1200ms forwards 500ms';
-       document.getElementById('atas').style.animation = 'muter2 1200ms forwards 500ms';
-       document.getElementById('belakang').style.animation = 'muter2 1200ms forwards 500ms';
-     window.scrollTo(0,0);
-       pin1 = false;
-     }
-   if (window.pageYOffset > 500) { scrollFun(window.pageYOffset); }else if(pin1 == false){document.querySelector('content').style.transform = 'rotatex(0deg) rotateY(0deg)';}
- }
-</script>
+<script src="system.js"></script>
 </html>

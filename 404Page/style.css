@@ -1,0 +1,32 @@
+body{
+    background: #040d21;
+}
+#number{
+    color: #040d21;
+    text-shadow: 0.6vmin 0.6vmin white, -0.6vmin -0.6vmin cyan;
+    font-family: sans-serif;
+    font-size: 20vh;
+    text-align: center;
+    position: relative;
+    animation: ats 10s infinite;
+}
+#number *{
+    position: relative;
+    animation: ats linear infinite;
+}
+#n1{
+    animation-delay: 200ms;
+    animation-duration: 4s;
+}
+#n2{
+    animation-duration: 3s;
+}
+#n3{
+    animation-delay: 400ms;
+    animation-duration: 5s;
+}
+@KeyFrames ats {
+    0%{top: 0vh}
+    50%{top: 10vh}
+    100%{top: 0vh}
+}

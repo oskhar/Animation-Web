@@ -1,0 +1,116 @@
+@KeyFrames jalan{to{left: 170px;}}
+@KeyFrames jalanN{to{left: -100px;}}
+@KeyFrames warna{to{background: #69e6ff;}}
+@KeyFrames loading{
+  0%{transform: rotate(180deg);}
+  100%{transform: rotate(0deg);}
+}
+@KeyFrames loadingIsi{
+  0%{height: 60px;width: 60px;left: 5px;top: 120px;}
+  15%,30%{height: 40px;width: 70px;left: 0px;top: 140px;}
+  45%,100%{height: 60px;width: 60px;left: 5px;top: 120px;}
+}
+@KeyFrames loadingIsiN{
+  0%{height: 60px;width: 60px;left: 5px;top: 120px;}
+  15%,30%{height: 40px;width: 70px;left: 0px;top: 120px;}
+  45%,100%{height: 60px;width: 60px;left: 5px;top: 120px;}
+}
+
+@KeyFrames fo{
+  0%{top: 0px; color: #1895ff;}
+  50%{top: 20px; color: #69e6ff;}
+  100%{top: 0px; color: #1895ff;}
+}
+p{
+  position: absolute;
+  width: 306px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 400px;
+  font: bold 60px/0px sans-serif;
+  color: #20b5fd;
+}
+#f1{position: relative;animation: fo 2800ms  infinite;}
+#f2{position: relative;animation: fo 2800ms 400ms infinite;}
+#f3{position: relative;animation: fo 2800ms 800ms infinite;}
+#f4{position: relative;animation: fo 2800ms 1200ms infinite;}
+#f5{position: relative;animation: fo 2800ms 1600ms infinite;}
+#f6{position: relative;animation: fo 2800ms 2000ms infinite;}
+#f7{position: relative;animation: fo 2800ms 2400ms infinite;}
+
+#latar{
+  height: 200px;
+  width: 600px;
+  position: absolute;
+  left: 0px;
+  right: 0;
+  margin: auto;
+  top: 100px;
+}
+.box, .boxN{
+  height: 300px;
+  width: 300px;
+  background: transparent;
+  position: absolute;
+  transform: rotate(180deg);
+}
+.boxN{transform: rotate(0deg);}
+.boxN1{
+  left: 170px;
+  transform: rotate(180deg);
+}
+
+.box1{left: -100px;}
+.box2, .boxN2{left: 0px;}
+.box3, .boxN3{left: 100px;}
+.box4, .boxN4{left: 200px;}
+.box5, .boxN5{left: 300px;}
+
+.box div, .boxN div{
+  height: 60px;
+  width: 60px;
+  background: darkblue;
+  border-radius: 8px;
+  position: absolute;
+  left: 5px;
+  bottom: 120px;
+}
+.box1 div, .boxN1 div{background: #1895ff;}
+.box2 div, .boxN2 div{background: #1c9fff;}
+.box3 div, .boxN3 div{background: #20b5fd;}
+.box4 div, .boxN4 div{background: #24c9fb;}
+.box5 div, .boxN5 div{background: #24d3fb;}
+.box, .boxN{animation: loading 1000ms linear forwards;}
+.boxN{animation-direction: reverse;}
+.box div{animation: loadingIsi 1000ms linear forwards;}
+.boxN div{animation: loadingIsiN 1000ms linear forwards;}
+
+.box2{animation-delay: 0ms;}
+.box3{animation-delay: 250ms;}
+.box4{animation-delay: 500ms;}
+.box5{animation-delay: 750ms;}
+
+.box2 div{animation-delay: 1000ms;}
+.box3 div{animation-delay: 1250ms;}
+.box4 div{animation-delay: 1500ms;}
+.box5 div{animation-delay: 1750ms;}
+
+.boxN2{animation-delay: 750ms;}
+.boxN3{animation-delay: 500ms;}
+.boxN4{animation-delay: 250ms;}
+.boxN5{animation-delay: 0ms;}
+
+.boxN2 div{animation-delay: 1750ms;}
+.boxN3 div{animation-delay: 1500ms;}
+.boxN4 div{animation-delay: 1250ms;}
+.boxN5 div{animation-delay: 1000ms;}
+
+.box1, .boxN1{animation: jalan 1600ms 0ms forwards;}
+.boxN1{
+  animation: jalanN 1600ms 0ms forwards;
+  animation-direction: normal;
+}
+
+.box1 div, .boxN1 div{animation: warna 1600ms 0ms forwards;}
+.boxN1 div{animation-direction: reverse;}

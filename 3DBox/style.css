@@ -1,0 +1,64 @@
+body{position: absolute;overflow-x: hidden;overflow-y: scroll;width: 100vw;height: 11300px;}
+content{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  transform-style: preserve-3d;
+}
+content *{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  transform-style: preserve-3d;
+  top: 0;
+  left: 0;
+}
+#depan{
+  background: rgb(255,0,0, 0.5);
+  transform: translateZ(150px);
+}
+#bawah{
+  top: 50%;
+  background: rgb(0,255,0, 0.5);
+  transform: rotateX(90deg);
+}
+#kanan{
+  left: 50%;
+  background: rgb(0,0,255, 0.5);
+  transform: rotateY(90deg);
+}
+#kiri{
+  left: -50%;
+  background: rgb(255,255,0, 0.5);
+  transform: rotateY(90deg);
+}
+#atas{
+  top: -50%;
+  background: rgb(0,255,255, 0.5);
+  transform: rotateX(90deg);
+}
+#belakang{
+  background: rgb(255,0,255, 0.5);
+  transform: translateZ(-150px);
+}
+@KeyFrames muter1{
+  to{
+    height: 300px;
+    width: 300px;
+    top: 25vh;
+  }
+}
+@KeyFrames muter2{
+  50%{
+    border-radius: 70%;
+  }
+  100%{
+    height: 300px;
+    width: 300px;
+    border-radius: 0;
+  }
+}
