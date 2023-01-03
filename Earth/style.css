@@ -1,6 +1,9 @@
+/* Atur background menjadi hitam */
 body{
 	background: #101010;
 }
+
+/* Mengatur bentuk dan posisi pada gambar bumi */
 #bumi{
 	height: 200px;
 	width: 200px;
@@ -14,10 +17,14 @@ body{
 	animation: animasiBumi 13s linear infinite;
 	z-index: 2;
 }
+
+/* Menggerakan gambar bumi dari kanan ke kiri, agar bumi terlihat seperti sedang berputar */
 @KeyFrames animasiBumi{
 	0%{background-position: 0%;}
 	100%{background-position: 300%;}
 }
+
+/* Menambah lapisan atmosfer */
 #bumi::after{
 	content: '';
 	height: 214px;
@@ -28,6 +35,8 @@ body{
 	top: -7px;
 	border-radius: 50%;
 }
+
+/* Mengatur bentuk dan posisi pada gambar bulan */
 #moon{
 	height: 58px;
 	width: 58px;
@@ -39,6 +48,8 @@ body{
 	background-size: 58px 58px;
 	animation: animasiBulan 6s linear infinite;
 }
+
+/* animasi untuk menggerakan bulan */
 @KeyFrames animasiBulan{
 	0%{
 		right: 20%;top: 20%;height: 40px;width: 40px;z-index: 3;
