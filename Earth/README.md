@@ -28,8 +28,10 @@ body{
 }
 ```
 ### Before
+#### Gambar 1. Hasil atau Output dari program diatas
 ![Ini Gambar](../docs/img/Earth1.png)
 ### After
+#### Gambar 2. Hasil atau Output dari program diatas
 ![Ini Gambar](../docs/img/Earth2.png)
 
 Mengatur posisi dan bentuk bumi berdasarkan id
@@ -48,6 +50,7 @@ Mengatur posisi dan bentuk bumi berdasarkan id
 	z-index: 2;
 }
 ```
+#### Gambar 3. Hasil atau Output dari program diatas
 ![Ini Gambar](../docs/img/Earth3.png)
 
 Sekaran kita atur animasi pada gambar bumi. Saya menggunakan foto persegi panjang yang gambarnya akan digerakan dari kanan ke kiri agar terlihat seperti bumi yang sedang berputar.
@@ -57,7 +60,8 @@ Sekaran kita atur animasi pada gambar bumi. Saya menggunakan foto persegi panjan
 	100%{background-position: 300%;}
 }
 ```
-![Ini Gambar](../docs/img/Earth4.png)
+#### Gambar 4. Hasil atau Output dari program diatas
+![Ini Gambar](../docs/img/Earth4.gif)
 
 Agar terlihat lebih nyata gambar buminya ditambahkan layer sebagai lapisan atmosfer
 ```css
