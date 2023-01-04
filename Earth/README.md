@@ -1,4 +1,9 @@
-## Penjelasan Source Code
+## DOKUMENTASI PROGRAM
+
+### Penjelasan Singkat
+Pada bagian ini akan dijelaskan terkait source code yang digunakan dalam program animasi web ini
+> **Note**: Untuk penjelasan melalui power point, anda dapat mengunjungi link drive di bawah ini
+> * [Dokumentasi dalam bentuk PowerPoint](https://docs.google.com/presentation/d/1SYyInnz0SWMaFFf5XvTMQoRWwya2OkoJBaDVLA1p7Ms/edit#slide=id.p)
 
 ### HTML
 
@@ -6,16 +11,16 @@ Pada program html masih standar dan cukup sederhana, bisa kalian tiru atau dekor
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
-	<title>Animasi Bumi</title>
-</head>
-<body>
-	<div id="bumi"></div>
-	<div id="moon"></div>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<title>Animasi Bumi</title>
+	</head>
+	<body>
+		<div id="bumi"></div>
+		<div id="moon"></div>
+	</body>
 </html>
 ```
 
