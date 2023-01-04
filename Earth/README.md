@@ -21,20 +21,20 @@ Pada program html masih standar dan cukup sederhana, bisa kalian tiru atau dekor
 
 ### CSS
 
-Pada tahap awal akan dibuat program untuk mewarnai background menjadi hitam
+**1.)** Pada tahap awal akan dibuat program untuk mewarnai background atau latar belakang menjadi hitam
 ```css
 body{
 	background: #101010;
 }
 ```
 #### Before
-##### Gambar 1. Hasil atau Output dari program diatas
+###### Gambar 1. Hasil atau Output dari program diatas
 ![Ini Gambar](../docs/img/Earth1.png)
 #### After
-##### Gambar 2. Hasil atau Output dari program diatas
+###### Gambar 2. Hasil atau Output dari program diatas
 ![Ini Gambar](../docs/img/Earth2.png)
 
-Mengatur posisi dan bentuk bumi berdasarkan id
+**2.)** Lalu program di bawah ini berfungsi untuk mengatur posisi dan bentuk bumi berdasarkan id
 ```css
 #bumi{
 	height: 200px;
@@ -50,20 +50,20 @@ Mengatur posisi dan bentuk bumi berdasarkan id
 	z-index: 2;
 }
 ```
-##### Gambar 3. Hasil atau Output dari program diatas
+###### Gambar 3. Hasil atau Output dari program diatas
 ![Ini Gambar](../docs/img/Earth3.png)
 
-Sekaran kita atur animasi pada gambar bumi. Saya menggunakan foto persegi panjang yang gambarnya akan digerakan dari kanan ke kiri agar terlihat seperti bumi yang sedang berputar.
+**3.)** Sekaran kita atur animasi pada gambar bumi. Saya menggunakan foto persegi panjang yang gambarnya akan digerakan dari kanan ke kiri agar terlihat seperti bumi yang sedang berputar.
 ```css
 @KeyFrames animasiBumi{
 	0%{background-position: 0%;}
 	100%{background-position: 300%;}
 }
 ```
-##### Gambar 4. Hasil atau Output dari program diatas
-![Ini Gambar](../docs/img/Earth4.gif)
+###### Gambar 4. Hasil atau Output dari program diatas
+![Ini Gambar](../docs/img/Earth40.gif)
 
-Agar terlihat lebih nyata gambar buminya ditambahkan layer sebagai lapisan atmosfer
+**4.)** Agar terlihat lebih nyata gambar buminya ditambahkan layer sebagai lapisan atmosfer
 ```css
 #bumi::after{
 	content: '';
@@ -76,10 +76,10 @@ Agar terlihat lebih nyata gambar buminya ditambahkan layer sebagai lapisan atmos
 	border-radius: 50%;
 }
 ```
-##### Gambar 5. Hasil atau Output dari program diatas
+###### Gambar 5. Hasil atau Output dari program diatas
 ![Ini Gambar](../docs/img/Earth5.png)<br/>
 
-Setelah menyelesaikan bagian bumi, sekarang mengatur gambar bulan. Pada program ini akan diatur bagaimana bentuk dan posisi bulan.
+**5.)** Setelah menyelesaikan bagian bumi, sekarang mengatur gambar bulan. Pada program ini akan diatur bagaimana bentuk dan posisi bulan.
 ```css
 #moon{
 	height: 58px;
@@ -93,10 +93,10 @@ Setelah menyelesaikan bagian bumi, sekarang mengatur gambar bulan. Pada program 
 	animation: animasiBulan 6s linear infinite;
 }
 ```
-##### Gambar 6. Hasil atau Output dari program diatas
+###### Gambar 6. Hasil atau Output dari program diatas
 ![Ini Gambar](../docs/img/Earth6.gif)<br/>
 
-Bentuk atau gambar bulan sudah tersusun, hanya perlu menambahkan sentuhan akhir untuk menggerakan bulan agar terlihat seolah bergerak 3D pada poros bulan mengelilingi bumi.
+**6.)** Bentuk atau gambar bulan sudah tersusun, hanya perlu menambahkan sentuhan akhir untuk menggerakan bulan agar terlihat seolah bergerak 3D pada poros bulan mengelilingi bumi.
 ```css
 @KeyFrames animasiBulan{
 	0%{
@@ -149,5 +149,5 @@ Bentuk atau gambar bulan sudah tersusun, hanya perlu menambahkan sentuhan akhir 
 	}
 }
 ```
-##### Gambar 7. Hasil atau Output dari program diatas
+###### Gambar 7. Hasil atau Output dari program diatas
 ![Ini Gambar](../docs/img/Earth7.gif)<br/>
