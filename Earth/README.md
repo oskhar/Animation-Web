@@ -94,7 +94,7 @@ Setelah menyelesaikan bagian bumi, sekarang mengatur gambar bulan. Pada program 
 }
 ```
 ##### Gambar 6. Hasil atau Output dari program diatas
-![Ini Gambar](../docs/img/Earth6.png)<br/>
+![Ini Gambar](../docs/img/Earth6.gif)<br/>
 
 Bentuk atau gambar bulan sudah tersusun, hanya perlu menambahkan sentuhan akhir untuk menggerakan bulan agar terlihat seolah bergerak 3D pada poros bulan mengelilingi bumi.
 ```css
@@ -150,4 +150,4 @@ Bentuk atau gambar bulan sudah tersusun, hanya perlu menambahkan sentuhan akhir 
 }
 ```
 ##### Gambar 7. Hasil atau Output dari program diatas
-![Ini Gambar](../docs/img/Earth6.png)<br/>
+![Ini Gambar](../docs/img/Earth7.gif)<br/>
