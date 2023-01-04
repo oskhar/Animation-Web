@@ -149,3 +149,5 @@ Bentuk atau gambar bulan sudah tersusun, hanya perlu menambahkan sentuhan akhir 
 	}
 }
 ```
+##### Gambar 7. Hasil atau Output dari program diatas
+![Ini Gambar](../docs/img/Earth6.png)<br/>
