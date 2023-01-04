@@ -93,6 +93,8 @@ Setelah menyelesaikan bagian bumi, sekarang mengatur gambar bulan. Pada program 
 	animation: animasiBulan 6s linear infinite;
 }
 ```
+##### Gambar 6. Hasil atau Output dari program diatas
+![Ini Gambar](../docs/img/Earth6.png)<br/>
 
 Bentuk atau gambar bulan sudah tersusun, hanya perlu menambahkan sentuhan akhir untuk menggerakan bulan agar terlihat seolah bergerak 3D pada poros bulan mengelilingi bumi.
 ```css
