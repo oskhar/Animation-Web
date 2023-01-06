@@ -12,4 +12,4 @@ Setiap pembuatan program tentu ada tujuan, alasan tertentu meski terkadang alasa
 - Senang senang mengisi waktu luang
 > **Note**: Repo ini hanya dikelola saat waktu luang
 
-# Cara Memanfaatkan Script
+## Cara Memanfaatkan Script
