@@ -1,3 +1,4 @@
+/* ANIMATION */
 @KeyFrames jalan{to{left: 170px;}}
 @KeyFrames jalanN{to{left: -100px;}}
 @KeyFrames warna{to{background: #69e6ff;}}
@@ -21,6 +22,9 @@
   50%{top: 20px; color: #69e6ff;}
   100%{top: 0px; color: #1895ff;}
 }
+/* END ANIMATION */
+
+/* Untuk mengatur semua ukuran text */
 p{
   position: absolute;
   width: 306px;
@@ -31,6 +35,8 @@ p{
   font: bold 60px/0px sans-serif;
   color: #20b5fd;
 }
+
+/* Menambahkan animasi ke dalam text loading */
 #f1{position: relative;animation: fo 2800ms  infinite;}
 #f2{position: relative;animation: fo 2800ms 400ms infinite;}
 #f3{position: relative;animation: fo 2800ms 800ms infinite;}
@@ -39,6 +45,7 @@ p{
 #f6{position: relative;animation: fo 2800ms 2000ms infinite;}
 #f7{position: relative;animation: fo 2800ms 2400ms infinite;}
 
+/* Mengatur element latar */
 #latar{
   height: 200px;
   width: 600px;
@@ -48,6 +55,8 @@ p{
   margin: auto;
   top: 100px;
 }
+
+/* Mengatur ukuran element, dan posisi awal dari element */
 .box, .boxN{
   height: 300px;
   width: 300px;
@@ -60,13 +69,11 @@ p{
   left: 170px;
   transform: rotate(180deg);
 }
-
 .box1{left: -100px;}
 .box2, .boxN2{left: 0px;}
 .box3, .boxN3{left: 100px;}
 .box4, .boxN4{left: 200px;}
 .box5, .boxN5{left: 300px;}
-
 .box div, .boxN div{
   height: 60px;
   width: 60px;

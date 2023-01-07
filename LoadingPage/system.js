@@ -1,5 +1,9 @@
+// Variable
 var udah = false;
+
+// Method
 function loop() {
+  // Untuk mengganti nama element dari box setiap setengah putaran
   if (udah) {
     document.querySelector('#latar').innerHTML = '<div class="box box1"><div></div></div><div class="box box2"><div></div></div><div class="box box3"><div></div></div><div class="box box4"><div></div></div><div class="box box5"><div></div></div>';
     udah = false;
@@ -8,4 +12,6 @@ function loop() {
     udah = true;
   }
 }
+
+// Memulai method loop
 setInterval(loop, 2500);
