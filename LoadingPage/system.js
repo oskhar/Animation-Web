@@ -13,5 +13,5 @@ function loop() {
   }
 }
 
-// Memulai method loop
+// Memulai fungsi agar berjalan secara berulang ulang
 setInterval(loop, 2500);

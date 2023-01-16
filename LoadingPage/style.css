@@ -1,3 +1,9 @@
+/* 
+
+  Note:
+  Animation dibuat dengang ketframe dimana keyframe adalah aturan dalam css yang berfungsi untuk arah gerak dan bentuk suatu element yang ada di dalam html 
+
+*/
 /* ANIMATION */
 @KeyFrames jalan{to{left: 170px;}}
 @KeyFrames jalanN{to{left: -100px;}}
@@ -64,16 +70,24 @@ p{
   position: absolute;
   transform: rotate(180deg);
 }
+
+/* Mengatur rotasi default dari element */
 .boxN{transform: rotate(0deg);}
+
+/* Mengubah posisi dan rotasi dari salah satu element */
 .boxN1{
   left: 170px;
   transform: rotate(180deg);
 }
+
+/* Mengtur posisi masing masing box */
 .box1{left: -100px;}
 .box2, .boxN2{left: 0px;}
 .box3, .boxN3{left: 100px;}
 .box4, .boxN4{left: 200px;}
 .box5, .boxN5{left: 300px;}
+
+/* Mengatur element div yang berada di dalam setiap element box */
 .box div, .boxN div{
   height: 60px;
   width: 60px;
@@ -83,41 +97,43 @@ p{
   left: 5px;
   bottom: 120px;
 }
+
+/* Set warna default dari element */
 .box1 div, .boxN1 div{background: #1895ff;}
 .box2 div, .boxN2 div{background: #1c9fff;}
 .box3 div, .boxN3 div{background: #20b5fd;}
 .box4 div, .boxN4 div{background: #24c9fb;}
 .box5 div, .boxN5 div{background: #24d3fb;}
+
+/* Menambahkan animasi ke dalam element */
 .box, .boxN{animation: loading 1000ms linear forwards;}
 .boxN{animation-direction: reverse;}
 .box div{animation: loadingIsi 1000ms linear forwards;}
 .boxN div{animation: loadingIsiN 1000ms linear forwards;}
 
+/* Attur masing masing delay dari setiap animasi pada box agar animasi dapat terlihat lebih smooth */
 .box2{animation-delay: 0ms;}
 .box3{animation-delay: 250ms;}
 .box4{animation-delay: 500ms;}
 .box5{animation-delay: 750ms;}
-
 .box2 div{animation-delay: 1000ms;}
 .box3 div{animation-delay: 1250ms;}
 .box4 div{animation-delay: 1500ms;}
 .box5 div{animation-delay: 1750ms;}
-
 .boxN2{animation-delay: 750ms;}
 .boxN3{animation-delay: 500ms;}
 .boxN4{animation-delay: 250ms;}
 .boxN5{animation-delay: 0ms;}
-
 .boxN2 div{animation-delay: 1750ms;}
 .boxN3 div{animation-delay: 1500ms;}
 .boxN4 div{animation-delay: 1250ms;}
 .boxN5 div{animation-delay: 1000ms;}
 
+/* Menambah animasi ke element sisahnya */
 .box1, .boxN1{animation: jalan 1600ms 0ms forwards;}
 .boxN1{
   animation: jalanN 1600ms 0ms forwards;
   animation-direction: normal;
 }
-
 .box1 div, .boxN1 div{animation: warna 1600ms 0ms forwards;}
 .boxN1 div{animation-direction: reverse;}
