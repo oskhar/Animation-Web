@@ -1,56 +1,44 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <title>coba lagi</title>
-    </head>
-
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tambahkan file css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Loading</title>
+</head>
+<body>
+    <!-- 
+        Latar berguna untuk wadah dari setiap box yang akan digerakan sesuai animasi
+     -->
+    <!-- LATAR -->
+    <div id="latar">
+        <div class="box box1"><div></div></div>
+        <div class="box box2"><div></div></div>
+        <div class="box box3"><div></div></div>
+        <div class="box box4"><div></div></div>
+        <div class="box box5"><div></div></div>
+    </div>
+    <!-- END LATAR -->
 
     <!-- 
-        Note: 
-        - Container (sebagai wadah atau latar dari animasi box yang berpindah pindah, agar penempatannya bisa lebih fleksibel)
-        - Box (Sebagai kotak yang akan bergerak berputar putar)
-    -->
-
-    <!-- CONTAINETR -->
-        <div id="latar">
-
-            <!-- BOX -->
-            <div class="box box1">
-                <div></div>
-            </div>
-            <div class="box box2">
-                <div></div>
-            </div>
-            <div class="box box3">
-                <div></div>
-            </div>
-            <div class="box box4">
-                <div></div>
-            </div>
-            <div class="box box5">
-                <div></div>
-            </div>
-            <!-- END BOX -->
-
-        </div>
-    <!-- END CONTAINER -->
-
+        Text untuk pemberitahuan selama loading berlangsung
+     -->
     <!-- TEXT -->
-        <p>
-            <font id="f1">L</font>
-            <font id="f2">O</font>
-            <font id="f3">A</font>
-            <font id="f4">D</font>
-            <font id="f5">I</font>
-            <font id="f6">N</font>
-            <font id="f7">G</font>
-        </p>
+    <p>
+        <font id="f1">L</font>
+        <font id="f2">O</font>
+        <font id="f3">A</font>
+        <font id="f4">D</font>
+        <font id="f5">I</font>
+        <font id="f6">N</font>
+        <font id="f7">G</font>
+    </p>
     <!-- END TEXT -->
 
-    <script src="system.js"></script>
-    </body>
+    <!-- Tambahkan file javascript -->
+    <script src="loading.js"></script>
+
+</body>
 </html>
